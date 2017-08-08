@@ -6,7 +6,7 @@ STEPS :
    make olddefconfig
  ```
  
-  - Compile the kernel and modules
+  - Compile the kernel and modules (Note: Do not compile as root)
   
   ```
     make or make -j8
@@ -31,11 +31,13 @@ STEPS :
   ```
 
  - Note:
-  ..* Can also copy kernel and initrd to /boot
-  ..* Create a intrd image using dracut/mkinitrd
+  1. Can also copy kernel and initrd to /boot
+  2. Create a intrd image using dracut/mkinitrd
 
     ```
-    initramfs 
+    update-initramfs -c -k <version>
+    or
+    mkinitramfs -o initrd.img-.....    
     ```
 
 -----------------

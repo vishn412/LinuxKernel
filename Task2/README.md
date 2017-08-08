@@ -1,4 +1,4 @@
-STEPS :
+## Steps to compile Kernel:
 
  - Create a config file (.config) using the old config file
 

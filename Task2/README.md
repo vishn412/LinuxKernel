@@ -30,15 +30,15 @@ STEPS :
     make install
   ```
 
- - Note:
-  1. Can also copy kernel and initrd to /boot
-  2. Create a intrd image using dracut/mkinitrd
+   - Note:
+    1. Can also copy kernel and initrd to /boot
+    2. Create a intrd image using dracut/mkinitrd
 
-    ```
-    update-initramfs -c -k <version>
-    or
-    mkinitramfs -o initrd.img-.....    
-    ```
+```
+       update-initramfs -c -k <version>
+       or
+       mkinitramfs -o initrd.img-.....    
+```
 
 -----------------
 

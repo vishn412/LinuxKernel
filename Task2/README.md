@@ -73,6 +73,8 @@
    root=(hd0,0)
    kernel /boot/vmlinuz-... root=UUID=.....
    initrd /boot/initrd
+   
+   grub-mkconfig -o ....path..of grub.cfg on mount....
   ```
   
   ----------------------

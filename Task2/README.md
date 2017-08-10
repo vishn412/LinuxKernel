@@ -43,10 +43,27 @@
 -----------------
 
    - Formating USB
-  
+   
+```
+   fdisk -l
+   dd if=/dev/zero of=/dev/sdc bs=512
+   fdisk /dev/sdc
+        options: (also set boot flag)
+        n add a new partition
+        p primary type partition
+          partition num:1
+          first sector:...
+          last sector:...
+        t change partition system id
+           linux
+        v verify partition
+        w write partition
+```
+
    - Install grub (/boot/grub on the partition)
    
 ```
+   grub-install --recheck --root-directory=...mount... --no-floppy /dev/sdc1
 ```
   
    - Create a grub config (grub.cfg or menu.lst)

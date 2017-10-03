@@ -21,8 +21,20 @@ If commit is made on same branch
 git format-patch master 2>abc.patch
 ```
 
+```
+git format-patch HEAD^
+```
+
+```
+git format-patch -n1
+```
+
 If not using git 
 
 ```
 diff -up
+or 
+diff -Nu originial new
 ```
+
+

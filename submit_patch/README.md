@@ -37,4 +37,8 @@ or
 diff -Nu originial new
 ```
 
+Send Email for the patch
+```
+git send-email --cc=XXX --cc=XXX --to=XXX@vger.kernel.org 0001-XXX.patch
+```
 
